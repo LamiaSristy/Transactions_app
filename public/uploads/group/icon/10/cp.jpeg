@@ -1,0 +1,386 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>BannersbyStats.com   Green Banners and Signs</title>
+		<meta name="keywords" content=",,Green,Banners and Signs">
+		<meta name="description" content="Banners by Stats   Green Banners and Signs">
+		<script language="javaScript">
+function Set_Cookie( name, value, expires, path, domain, secure ) 
+{
+// set time, it's in milliseconds
+var today = new Date();
+today.setTime( today.getTime() );
+
+/*
+if the expires variable is set, make the correct 
+expires time, the current script below will set 
+it for x number of days, to make it for hours, 
+delete * 24, for minutes, delete * 60 * 24
+*/
+if ( expires )
+{
+expires = expires * 1000 * 60 * 60 * 24;
+}
+var expires_date = new Date( today.getTime() + (expires) );
+
+document.cookie = name + "=" +escape( value ) +
+( ( expires ) ? ";expires=" + expires_date.toGMTString() : "" ) + 
+( ( path ) ? ";path=" + path : "" ) + 
+( ( domain ) ? ";domain=" + domain : "" ) +
+( ( secure ) ? ";secure" : "" );
+}
+
+// this fixes an issue with the old method, ambiguous values 
+// with this test document.cookie.indexOf( name + "=" );
+function Get_Cookie( check_name ) {
+	// first we'll split this cookie up into name/value pairs
+	// note: document.cookie only returns name=value, not the other components
+	var a_all_cookies = document.cookie.split( ';' );
+	var a_temp_cookie = '';
+	var cookie_name = '';
+	var cookie_value = '';
+	var b_cookie_found = false; // set boolean t/f default f
+	
+	for ( i = 0; i < a_all_cookies.length; i++ )
+	{
+		// now we'll split apart each name=value pair
+		a_temp_cookie = a_all_cookies[i].split( '=' );
+		
+		
+		// and trim left/right whitespace while we're at it
+		cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+	
+		// if the extracted name matches passed check_name
+		if ( cookie_name == check_name )
+		{
+			b_cookie_found = true;
+			// we need to handle case where cookie has no value but exists (no = sign, that is):
+			if ( a_temp_cookie.length > 1 )
+			{
+				cookie_value = unescape( a_temp_cookie[1].replace(/^\s+|\s+$/g, '') );
+			}
+			// note that in cases where cookie is initialized but no value, null is returned
+			return cookie_value;
+			break;
+		}
+		a_temp_cookie = null;
+		cookie_name = '';
+	}
+	if ( !b_cookie_found )
+	{
+		return null;
+	}
+}				
+
+// this deletes the cookie when called
+function Delete_Cookie( name, path, domain ) {
+if ( Get_Cookie( name ) ) document.cookie = name + "=" + 
+(( path ) ? ";path=" + path : "") + 
+(( domain ) ? ";domain=" + domain : "" ) + ";expires=Thu, 01-Jan-1970 00:00:01 GMT";
+}
+
+Set_Cookie( 'test', 'it works', '', '/', '', '' );
+if ( Get_Cookie( 'test' ) ){ 
+//alert(Get_Cookie('test'));
+}else{
+alert('You do not have cookies turned on in your browser!\n' + 
+'You will need to enable cookies for this program to work correctly' + 
+'If you do not know how to enable cookies or you do not wish to enable them for this site\n' +
+'Please Call us at (888)560-5006 and we will help you.');
+}
+// and these are the parameters for Delete_Cookie:
+// name, path, domain
+// make sure you use the same parameters in Set and Delete Cookie.
+Delete_Cookie('test', '/', '');
+// -->
+	</script>
+	</head>
+
+	<body bgcolor="#666666" text="black" link="blue" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+		<font size="6">
+		<table border="0" cellpadding="0" cellspacing="2" width="998">
+			<tr height="25">
+				<td height="25" width="795">
+					<table width="794" border="0" cellspacing="2" cellpadding="0">
+						<tr>
+							<td><img src="/order0607/welcome-home-header.gif" width="783" height="72" border="0" usemap="#Map"></td>
+						</tr>
+						<tr>
+							<td width="790">
+								<table border="0" cellpadding="0" cellspacing="2" width="690">
+									<tr align="center" valign="middle" height="23">
+											<td height="23" bgcolor="#33ff00"></td>
+											<td bgcolor="#33ff00"><a href="http://bannersbystats.com/mmkcart/main.asp?action=SUB&CAT=Extras&SUB=Extra%20Items"><img height="20" width="450" src="html_images/dont-forget-bungees.gif" border="0"></a></td>
+										<td bgcolor="#33ff00" height="23"><a href="http://bannerbystats.com/aboutus.html"><font size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><strong>About Us</strong></font></a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr height="27">
+				<td width="795" valign="top" height="27">
+					<div align="left">
+						<table width="100%" border="0" align="center" cellpadding="10" cellspacing="0" bordercolor="#666666">
+							<tr>
+								<td>
+										<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" bgcolor="white">
+								  <tr>
+								    <td width="50%" valign="top"><span class="style7">
+    <script language="JavaScript" type="text/JavaScript">
+<!--
+function tdOver(theObj) {
+	theObj.style.backgroundColor='#FFFFFF';
+	theObj.style.color='#434343';
+}
+
+function tdOut(theObj) {
+	theObj.style.backgroundColor='#434343';
+	theObj.style.color='#FFFFFF';	
+}
+
+function openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+  }
+<!-- this function calculates the cost and shipping when options are used ---> 
+var ProdOptOne,ProdOptTwo,ProdOptThree,ProdOptFour,valProdOptOne,valProdOptTwo,valProdOptThree,valProdOptFour;
+var ship,shipMult,QuantPass,total,OptionsTot;
+var objName,objType,objSize,objColor,objTotalCost,objProdOnPage,objuniqueProduct,objOptionsTot;
+var objProductStr,objImage,objShipping,objPrice,objQuant,objInShipping,ShippingOut;
+var tType,tSize,tColor;
+
+function calculate(prodNum){
+    objName = "type" + prodNum;objType = findObj(objName);
+    objName = "size" + prodNum;objSize = findObj(objName);
+    objName = "color" + prodNum;objColor = findObj(objName);
+  
+    objName = "ProdOptOne" + prodNum;var objProdOptOne = findObj(objName);
+    objName = "ProdOptTwo" + prodNum;var objProdOptTwo = findObj(objName); 
+    objName = "ProdOptThree" + prodNum;var objProdOptThree = findObj(objName);
+    objName = "ProdOptFour" + prodNum;var objProdOptFour = findObj(objName);   
+
+    objName = "price" + prodNum;objPrice = findObj(objName);
+    objName = "Quantity" + prodNum;objQuant = findObj(objName); 
+    objName = "Shipping" + prodNum;objShipping = findObj(objName);
+    objName = "InShipping" + prodNum;var objInShipping = findObj(objName);
+    objName = "TotalCost" + prodNum;objTotalCost = findObj(objName);
+	objName = "OptionsTot" + prodNum;objOptionsTot = findObj(objName);
+	
+    objName = "uniqueProduct" + prodNum;objuniqueProduct = findObj(objName);
+    objName = "ProductStr" + prodNum;objProductStr  = findObj(objName);
+    objName = "ProdOnPage";objProdOnPage = findObj(objName);
+    objName = "image" + prodNum;objImage = findObj(objName);
+      
+   if (objPrice) Price = objPrice.value;
+   if (objuniqueProduct) objuniqueProduct = objuniqueProduct.value;
+   if (objType) tType = objType.value;
+   if (objSize) tSize = objSize.value;
+   if (objColor) tColor = objColor.value;
+   
+   if (objProdOptOne) {ProdOptOne = parseFloat(objProdOptOne[objProdOptOne.selectedIndex].value)}else{ProdOptOne = 0};
+   if (objProdOptTwo) {ProdOptTwo = parseFloat(objProdOptTwo[objProdOptTwo.selectedIndex].value)}else{ProdOptTwo = 0};
+   if (objProdOptThree) {ProdOptThree = parseFloat(objProdOptThree[objProdOptThree.selectedIndex].value)}else{ProdOptThree = 0};
+   if (objProdOptFour) {ProdOptFour = parseFloat(objProdOptFour[objProdOptFour.selectedIndex].value)}else{ProdOptFour = 0};
+   
+   if (objProdOptOne) valProdOptOne = objProdOptOne[objProdOptOne.selectedIndex].text;
+   if (objProdOptTwo) valProdOptTwo = objProdOptTwo[objProdOptTwo.selectedIndex].text;
+   if (objProdOptThree) valProdOptThree = objProdOptThree[objProdOptThree.selectedIndex].text;
+   if (objProdOptFour) valProdOptFour = objProdOptFour[objProdOptFour.selectedIndex].text;
+
+	ship = objInShipping.value;
+	objOptionsTot.value = zeros(parseFloat(ProdOptOne) + parseFloat(ProdOptTwo) + parseFloat(ProdOptThree) + parseFloat(ProdOptFour),prodNum);
+	shipMult = parseInt(objQuant.value) * ship;
+	objShipping.value = zeros(shipMult,prodNum);
+	return ProdOptOne,ProdOptTwo,ProdOptThree,ProdOptFour;
+	
+}
+
+function SetCalc(prodNum){
+	objTotalCost.value = zeros(total,prodNum);
+	objProdOnPage.value = objuniqueProduct + "|" + tType + "|" + tSize + "|" + tColor +
+	"|" + ProdOptOne + "|" + ProdOptTwo + "|" + ProdOptThree + "|" + ProdOptFour + "|" + objImage.value + 
+	"|" + objShipping.value + "|" + ShippingOut + "|" + objTotalCost.value + "|" + objPrice.value + 
+	"|" + objQuant.value + "|" + valProdOptOne + "|" + valProdOptTwo + "|" + valProdOptThree + "|" + valProdOptFour;
+	//alert(objProdOnPage.value);
+}
+
+function zeros(toFix,prodNum){
+    objName =  "TotalCost" + prodNum;var objTotalCost =  findObj(objName); 
+	
+	objTotalCost.value = toFix;TotalCost = objTotalCost;
+	objTotalCost.value = ((Math.round(objTotalCost.value * 100)) / 100);
+	var dec1 = objTotalCost.value.substring(objTotalCost.value.length-3, objTotalCost.value.length-2);
+	var dec2 = objTotalCost.value.substring(objTotalCost.value.length-2, objTotalCost.value.length-1);
+	if (dec1 != '.'){ 
+     if (dec2 == '.'){
+       	objTotalCost.value += "0"; 
+     }else{
+      objTotalCost.value += ".00";
+   	  }
+  	}
+   return objTotalCost.value;
+}
+
+<!-- this function used to find the object even with mult forms ---> 
+function findObj(n, d) { //v4.01
+  var p,i,x;if(!d) d=document; 
+  if((p=n.indexOf("?"))>0&&parent.frames.length) {
+  d=parent.frames[n.substring(p+1)].document;n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n];for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); 
+  return x;
+}
+<!-- focus on the quantity field if someone tries to change price or shipping  ---> 
+function fldfocus(prodNum){
+  objName =  "Quantity" + prodNum;var objQuantity =  findObj(objName);objQuantity.focus();   	
+}
+function submitIt(prodNum){
+var NumProd = prodNum;
+calculate(NumProd);
+document.StoreForm.submit();
+
+}
+//-->
+  </SCRIPT>
+  	  <form name="StoreForm" method="post" action="/mmkcart/main.asp" target="_top">
+	  <input name="ProdOnPage" type="hidden" id="ProdOnPage" value="x">
+	  <input name="ACTION" type="hidden" id="ACTION" value="cartadd">
+	  <input name="RETLNK" type="hidden" id="RETLNK" value="/mmkcart/main.asp?ACTION=PROD&TYPE=&CTMP=1&CAT=&SUB=&PROD=Green&Search=&PG=">
+</div>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.style5 {color: #FFFFFF}
+.style7 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.style9 {color: #FFFFFF; font-weight: bold; }
+.style4 {font-size: 12px}
+-->
+</style>
+<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#333333">
+  <tr>
+    <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="table">
+      <tr>
+        <td><table width="75%" align="center" cellpadding="5" cellspacing="0" bordercolor="#003300" bgcolor="#FFFFFF" class="td">
+            <tr align="left">
+              <td colspan="2" valign="middle"><table width="100%"  border="0" cellspacing="0" cellpadding="5">
+                  <tr>
+                    <td bgcolor="#990000"><span class="style9"><font face="Arial, Helvetica, sans-serif" class="font1">Product
+                        Name: </font><font size="2" face="Arial, Helvetica, sans-serif" class="MMKFontBig">Green With Glow Add Any Text Below</font><font size="2" face="Arial, Helvetica, sans-serif" class="MMKFontBig"></font></span></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr bgcolor="#FFEAD5">
+              <td width="1%" align="center" valign="middle" bgcolor="#FFFFFF">
+                <p class="font1"><font color="#003300" size="2" face="Times New Roman, Times, serif"><img src="images/green.jpg"  border="1"></font></p></td>
+              <td width="99%" height="99%" align="left" valign="top" bgcolor="#FFFFFF">
+                <table width="100%" height="100%"  border="0" cellpadding="5" cellspacing="0">
+                  <tr>
+                    <td height="99%" align="right"><div class="MMKFont2"></div>                                            <table width="100%" height="100%"  border="0" cellpadding="5" cellspacing="0">
+                      <tr>
+                        <td valign="top" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif" class="font1">Product Description:</font><br>
+                        <font face="Arial, Helvetica, sans-serif" class="lFont2">Green w/Glow</font></td>
+                        <td width="10%" align="right" valign="top"><span class="font1"><font size="2" face="Arial, Helvetica, sans-serif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td colspan="2"  align="center" class="Font2">BUY NOW:</td>
+<tr>
+<td class="Font2">Qty:</td>
+<td><input name="Quantity1" type="text" value="1" id="Quantity1" size="4" onchange=Calc1(1);></td>
+</tr>
+<tr>
+<td class="Font2"></td>
+<td><input name="OptionsTot1" type="hidden" value="1" id="OptionsTot1" size="8" onfocus=fldfocus(1);></td>
+</tr>
+<tr>
+<td class="Font2"></td>
+<td><input name="Shipping1" type="hidden" id="Shipping1" size="4" value="0.00" onfocus=fldfocus(1);><hr></td>
+</tr>
+<tr>
+<td class="Font1">Total:</td>
+<td><input name="TotalCost1" type="text" id="TotalCost1" size="8" value="0.00" onfocus=fldfocus(1);></td>
+</tr>
+<tr>
+<td><input name="uniqueProduct1" type="hidden" id="uniqueProduct1" value="Green">
+<input name="image1" type="hidden" id="image1" value="green.jpg">
+<input name="price1" type="hidden" id="price1" value="0">
+<input name="Math1" type="hidden" id="Math1" value="ProdOptOne + Price
+              
+              
+              ">
+<input name="InShipping1" type="hidden" id="InShipping1" value="0">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function Calc1(prodNum){
+calculate(prodNum);
+total = ((ProdOptOne + Price
+              
+              
+               * parseInt(1)));
+SetCalc(prodNum);
+}
+//-->
+</script>
+</td>
+<td><input name="AddProd1" type="button" id="AddProd1" value="Add" onClick=Calc1(1);submitIt(1)></td>
+<img src="images/update.gif" height="1" width="1" border="0" onLoad=Calc1(1);></tr>
+</table>
+</font></span></td>
+                      </tr>
+                    </table>                      </div></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr align="right" bgcolor="#990000">
+              <td colspan="2" valign="middle"><table width="90%"  border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="70%" class="style5"><table width="100%"  border="0" cellspacing="0" cellpadding="5">
+                    <tr>
+                      <td class="style1">Adding product to the cart will not
+                        take you away from this page. You can view your cart
+                        contents below. </td>
+                    </tr>
+                  </table></td>
+                  </tr>
+              </table></td>
+              </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+<!-- Print out necessary hidden tags For page this is in run ASP -->
+</form>
+
+<form name="CheckOutForm" method="post" action="cart.asp" target="_parent">
+  <div align="center">
+    <input type="submit" name="Submit" value="View Your Cart">
+  </div>
+</form>
+<div align="center"><a href="http://www.mmktechnologies.com" target="_blank"><img src="images/power.jpg" alt="Powered By MMK Technologies" width="180" height="16" border="0"></a>
+  
+								      </span></td>
+								  </tr>
+								  </table>
+										<p></td></tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</font>
+	
+<map name="Map"><area shape="rect" coords="617,9,762,35" href="/mmkcart/cart.asp" target="_parent">
+</map></body>
+
+</html>

@@ -2,8 +2,8 @@ class TransactionsController < ApplicationController
     before_action :authenticate_user!
 
   def index 
-    @t1 = Transaction.with_group
-    @t2 = Transaction.without_group
+    @t1 = Transaction.with_group.ordered_by_most_recent
+    @t2 = Transaction.without_group.ordered_by_most_recent
   end
 
   def new

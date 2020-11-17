@@ -1,18 +1,22 @@
-<div class='center jumbotron shadow'>
-  <article>
-    <h3>
-    All Groups:
-    </h3>
-    <ul >
+  <div class="center">
+    <h3> All Groups:</h3>  
       <% @groups.each do |group| %>
-      <li>
-        <%= group.name %>
-      </li>
-    <% end %>
-    </ul>
-  </article>
-</div>
+      <div class="card mb-3 center custom-bg" style="max-width: 540px;">
+	      <div class="row">
+          <div class="col-3">
+            <img src="<%=group.icon%>" class="icon" alt="">
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+            <h5 class="card-title"><%= group.name %></h5>        
+            </div>
+          </div>
+	      </div>
+	    </div>     
+    <% end %>   
+  </div>
 
-<div class='action'>
-  <%= link_to 'Create a new Group', new_group_path, :class => 'btn btn-primary btn-lg' %> 
+
+<div class='action d-flex '>
+  <%= link_to 'Create a new Group', new_group_path, :class => 'btn btn-primary col-12 col-md-4 center ' %> 
 </div>

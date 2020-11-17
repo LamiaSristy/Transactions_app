@@ -7,4 +7,5 @@ class Transaction < ApplicationRecord
 
   scope :without_group, -> { where('group_id IS NULL') }
   scope :with_group, -> { where('group_id > 0') }
+  scope :ordered_by_most_recent, -> { order(created_at: :desc) }
 end

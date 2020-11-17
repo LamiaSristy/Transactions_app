@@ -1,0 +1,14 @@
+#config/cloudinary.yml
+
+development:
+  cloud_name: CLOUD NAME
+  api_key: 'API KEY'
+  api_secret: API SECRET
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: CLOUD NAME
+  api_key: 'API KEY'
+  api_secret: API SECRET
+  enhance_image_tag: true
+  static_file_support: true

@@ -1,19 +1,20 @@
-$primary-color-dark: #689f38;
+$primary-color-dark: #34501b;
 $primary-color: #8bc34a;
 $primary-color-light: #dcedc8;
-$primary-color-text: #212121;
+$primary-color-text: #031804;
 $divider-color: #bdbdbd;
+$btn-color: #1b2d68;
 
 * {
     margin: 0;
     padding: 0;
-    // box-sizing: border-box;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    // box-sizing: content-box;
     outline: none;
   }
   
   body {
-    background: #fff;
+    background: lightgrey;
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 400;    
@@ -43,15 +44,28 @@ $divider-color: #bdbdbd;
 #page-content {
   flex: 1 0 auto;
   background-color: lightgrey;
-  padding: 20px 0;
+  padding: 20px 10px 120px 10px;
 }
 
 .center {
   text-align: center;
+  margin: 0 auto;
 }
 
 .btn-primary {
   width: 100%;
+  background-color: $btn-color !important;
+}
+
+.custom-bg {
+  background-color: $primary-color-dark !important;
+  color: white;
+}
+
+.icon {
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px 0 0 10px;
 }
 
 form {
