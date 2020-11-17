@@ -1,0 +1,13 @@
+<div class='center jumbotron'>
+  <h2>Add Transaction</h2>
+  <%=form_for @transaction do |f|%>
+    <%=f.label :name%>
+    <%=f.text_field :name%>
+    <%=f.label :amount%>
+    <%=f.number_field :amount%>
+    <%=f.label :select_group%>
+    
+    <%=select("transaction", "group_id", Group.all.collect {|g|[g.name, g.id] }, { include_blank: true })%>
+    <%=f.submit "Create"%>
+  <%end%> 
+</div>

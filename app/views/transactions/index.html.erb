@@ -1,16 +1,31 @@
 <div class='center jumbotron shadow'>
   <article>
-  <h3>
-   All Transactions:
-  </h3>
+  <h3>All Transactions With Group:</h3>
   <ul >
-    <% @transactions.each do |t| %>
+    <% @t1.each do |t| %>
     <li>
       <%= t.name %>
     </li>
   <% end %>
   </ul>
 </article>
+</div>
+
+<div class='center jumbotron shadow'>
+  <article>
+  <h3>All Transactions With-out Group:</h3>
+  <ul >
+    <% @t2.each do |t| %>
+    <li>
+      <%= t.name %>
+    </li>
+  <% end %>
+  </ul>
+</article>
+</div>
+
+<div class='action'>
+  <%= link_to 'Add new transaction', new_transaction_path, :class => 'btn btn-primary btn-lg' %> 
 </div>
 
 

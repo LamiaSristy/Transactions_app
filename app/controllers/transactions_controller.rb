@@ -2,26 +2,33 @@ class TransactionsController < ApplicationController
     before_action :authenticate_user!
 
   def index 
-    @transactions = Transaction.all
+    @t1 = Transaction.with_group
+    @t2 = Transaction.without_group
   end
 
   def new
     @transaction = Transaction.new
   end
 
-  def create 
+  def create
+    
+    group = Group.where(name: params['group_id']).first
     @transaction = Transaction.new(transaction_param)
-    @transaction.user = current_user
-    # if @group.save
-    #   redirect_to user_groups_path, notice: 'Group was successfully created.'
-    # else
-    #   render :new
-    # end
+    # @transaction.name = params[:name]
+    # @transaction.amount = 11 #params[:amount]
+    @transaction.author_id = current_user.id
+    # @transaction.group_id = 1 #params['group_id']
+    if @transaction.save
+      redirect_to transactions_path, notice: 'New transaction was successfully created.'
+    else
+     render :new
+    end
   end
 
   private
 
   def transaction_param
-    params.require(:transaction).permit(:name, :amount)
+    params.require(:transaction).permit(:name, :amount, :group_id)
   end
+  
 end

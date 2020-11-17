@@ -1,0 +1,9 @@
+<div class='center jumbotron'>
+  <h2>New group</h2>
+  <%=form_for @group do |f|%>
+    <%=f.label :name%>
+    <%=f.text_field :name%>
+    
+    <%=f.submit "Create"%>
+  <%end%> 
+</div>
