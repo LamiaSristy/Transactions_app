@@ -7,7 +7,8 @@ $divider-color: #bdbdbd;
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    // box-sizing: border-box;
+    box-sizing: content-box;
     outline: none;
   }
   
@@ -15,7 +16,7 @@ $divider-color: #bdbdbd;
     background: #fff;
     position: relative;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 400;    
   }
 
 .navbar {
@@ -37,6 +38,12 @@ $divider-color: #bdbdbd;
 
 #logo:hover {
   text-decoration: none;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgrey;
+  padding: 20px 0;
 }
 
 .center {
@@ -72,6 +79,13 @@ form {
 
 .jumbotron {
     margin: 50px;
+}
+
+.transition {
+  &:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 10px 10px 5px grey;
+  }
 }
 
 #sticky-footer {
