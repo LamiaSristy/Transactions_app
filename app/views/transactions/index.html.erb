@@ -1,21 +1,23 @@
 <div class='center jumbotron shadow'>
   <article>
   <h3>All Transactions With Group:</h3>
-  <ul >
+  Total Expence<%= @t1.sum(:amount) %>
+  <ul class="list-unstyled">
     <% @t1.each do |t| %>
     <li>
       <%= t.name %>
        <%= t.amount %>
     </li>
   <% end %>
-  </ul>
+  </ul>  
 </article>
 </div>
 
 <div class='center jumbotron shadow'>
   <article>
   <h3>All Transactions With-out Group:</h3>
-  <ul >
+  Total Expence<%= @t2.sum(:amount) %>
+  <ul class="list-unstyled">
     <% @t2.each do |t| %>
     <li>
       <%= t.name %>
