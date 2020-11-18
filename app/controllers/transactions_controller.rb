@@ -3,10 +3,10 @@ class TransactionsController < ApplicationController
 
   def index
     if params[:view]
-      @t1 = Transaction.with_group.ordered_by_most_recent
+      @t1 = Transaction.with_group(current_user.id).ordered_by_most_recent
       render 'one_page'
     else
-      @t2 = Transaction.without_group.ordered_by_most_recent 
+      @t2 = Transaction.without_group(current_user.id).ordered_by_most_recent 
       render 'another_page'
     end
   end
