@@ -1,9 +1,9 @@
 $primary-color-dark: #34501b;
-$primary-color: #8bc34a;
-$primary-color-light: #dcedc8;
+$primary-color: #5baa54;
+$primary-color-light: #d6e9c0;
 $primary-color-text: #031804;
 $divider-color: #bdbdbd;
-$btn-color: #1b2d68;
+$btn-color: #084d86;
 
 * {
     margin: 0;
@@ -14,11 +14,13 @@ $btn-color: #1b2d68;
   }
   
   body {
-    background: lightgrey;
+    background: $primary-color-light;
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 400;    
   }
+
+
 
 .navbar {
     background-color: $primary-color-dark !important;
@@ -43,7 +45,7 @@ $btn-color: #1b2d68;
 
 #page-content {
   flex: 1 0 auto;
-  background-color: lightgrey;
+  background-color: $primary-color-light;
   padding: 20px 10px 120px 10px;
 }
 
@@ -62,9 +64,13 @@ $btn-color: #1b2d68;
   color: white;
 }
 
+.custom-bg2 {
+  background-color: $primary-color !important;
+}
+
 .icon {
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 70px;
   border-radius: 50%;
   margin: 10px 0 0 10px;
 }

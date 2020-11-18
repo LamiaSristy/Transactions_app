@@ -1,8 +1,16 @@
-  <div class="center">
-    <h3> All Groups:</h3>  
-      <% @groups.each do |group| %>
+<div class='action d-flex mb-3'>
+  <%= link_to 'Create a new Group', new_group_path, :class => 'btn btn-primary col-12 col-md-4 center font-weight-bold' %> 
+</div>
+
+<div class='custom-bg2 d-flex justify-content-between rounded col-12 col-md-4 center mb-5 shadow-sm bg-white'>
+    <p class = 'center py-3 text-light font-weight-bold'> All Groups:</p> 
+</div>
+
+<div class="center"> 
+  <% @groups.each do |group| %>
+    <%= link_to group_path(group.id) do %>
       <div class="card mb-3 center custom-bg" style="max-width: 540px;">
-	      <div class="row">
+        <div class="row">
           <div class="col-3">
             <img src="<%=group.icon%>" class="icon" alt="">
           </div>
@@ -11,12 +19,11 @@
             <h5 class="card-title"><%= group.name %></h5>        
             </div>
           </div>
-	      </div>
-	    </div>     
+        </div>
+      </div>  
     <% end %>   
-  </div>
-
-
-<div class='action d-flex '>
-  <%= link_to 'Create a new Group', new_group_path, :class => 'btn btn-primary col-12 col-md-4 center ' %> 
+  <% end %>   
 </div>
+
+
+

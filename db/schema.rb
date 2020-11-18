@@ -30,9 +30,9 @@ ActiveRecord::Schema.define(version: 2020_11_17_144213) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "author_id"
-    t.bigint "group_id"
+    t.bigint "groups_id"
     t.index ["author_id"], name: "index_transactions_on_author_id"
-    t.index ["group_id"], name: "index_transactions_on_group_id"
+    t.index ["groups_id"], name: "index_transactions_on_groups_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -49,6 +49,6 @@ ActiveRecord::Schema.define(version: 2020_11_17_144213) do
   end
 
   add_foreign_key "groups", "users"
-  add_foreign_key "transactions", "groups"
+  add_foreign_key "transactions", "groups", column: "groups_id"
   add_foreign_key "transactions", "users", column: "author_id"
 end

@@ -1,0 +1,24 @@
+ <div class="center">
+    <div class='custom-bg d-flex justify-content-around rounded col-12 col-md-6 center mb-5 shadow-sm bg-white'>
+      <h3 class ="mt-3"><%= "Group Name: #{@group.name}" %></h3>
+      <img src="<%=@group.icon%>" class="icon mb-2" alt="">
+    </div>
+
+    <ul>
+    <% @group.transactions.each do |t|%>
+      <div class = "d-flex justify-content-around border border-success rounded custom-bg">
+        <div class = "col-4 font-weight-lighter">
+           <%= t.name%>
+        </div>
+        <div class = "col-2 col-md-4 font-weight-lighter">
+          $<%= t.amount%>
+        </div>  
+        <div class = "col-6 col-md-4 font-weight-lighter">
+          <%= t.created_at.strftime("%b %d, %Y")%>
+        </div>
+      </div>  
+    <%end%> 
+  </ul>
+ </div>
+ 
+ 

@@ -1,15 +1,15 @@
 <h1 class="text-center mt-4">Welcome</h1>
 
-<div class="jumbotron center shadow-lg bg-white rounded">
-    <article class='center p-2 mb-3 mx-2 transition shadow'>
-      <%= link_to 'All  my transactions', transactions_path(view: true)%>
+<div class=" center py-5 shadow-lg bg-white rounded col-12 col-md-6  custom-bg">
+    <article class='center p-2 mb-3 mx-2 transition shadow rounded custom-bg2'>
+      <%= link_to 'All  my transactions', transactions_path(view: true), :class => 'text-light'%>
     </article>
-    <div class='center p-2 mb-3 mx-2 transition shadow'>
-      <%= link_to 'All my external transactions', transactions_path %>
+    <div class='center p-2 mb-3 mx-2 transition shadow rounded custom-bg2'>
+      <%= link_to 'All my external transactions', transactions_path, :class => 'text-light' %>
     </div>
     
-    <div class='center p-2 mb-3 mx-2 transition shadow'> 
-      <%= link_to "All Groups", groups_path %>
+    <div class='center p-2 mb-3 mx-2 transition shadow rounded custom-bg2'> 
+      <%= link_to "All Groups", groups_path, :class => 'text-light' %>
     </div>
 </div>
 
