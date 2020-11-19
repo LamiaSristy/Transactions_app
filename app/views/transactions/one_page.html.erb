@@ -9,22 +9,24 @@
   </div>
 
   <% @t1.each do |t| %>
-    <div class="card mb-3 center custom-bg " style="max-width: 540px;">
-      <div class="row">
-        <div class="col-3">
-          <img src="<%=t.group.icon%>" class="icon" alt="">
-        </div>
-        <div class="col-8">
-          <div class="card-body">
-            <div class = "d-flex justify-content-between">
-              <h5 class="card-title"><%= t.name %></h5>  
-              <p class="card-text">$<%= t.amount %></p>
-            </div>          
-            <p class="card-text d-flex justify-content-start"><small class="text-muted"><%=t.created_at.strftime("%b %d, %Y")%></small></p>      
+     <%= link_to transaction_path(t.id) do %> 
+       <div class="card mb-3 center custom-bg " style="max-width: 540px;">
+        <div class="row">
+          <div class="col-3">
+            <img src="<%=t.group.icon%>" class="icon" alt="">
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <div class = "d-flex justify-content-between">
+                <h5 class="card-title"><%= t.name %></h5>  
+                <p class="card-text">$<%= t.amount %></p>
+              </div>          
+              <p class="card-text d-flex justify-content-start"><small class="text-muted"><%=t.created_at.strftime("%b %d, %Y")%></small></p>      
+            </div>
           </div>
         </div>
-      </div>
-    </div> 
+      </div> 
+     <%end%>   
   <%end%>
 
   <%= link_to "Back", :back, :class => 'text-dark' %>

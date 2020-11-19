@@ -23,6 +23,16 @@ class GroupsController < ApplicationController
     @group = Group.find(params[:id])  
   end
 
+  def edit
+    @group = Group.find(params[:id])
+  end
+
+  def update
+    @group = Group.find(params[:id])
+    @group.update(group_param)
+    redirect_to group_path(@group)
+  end
+
   private
 
   def group_param

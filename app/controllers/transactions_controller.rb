@@ -26,6 +26,20 @@ class TransactionsController < ApplicationController
     end
   end
 
+  def show
+    @transaction= Transaction.find(params[:id])
+  end
+
+  def edit
+    @transaction= Transaction.find(params[:id])
+  end
+
+  def update
+    @transaction= Transaction.find(params[:id])
+    @transaction.update(transaction_param)
+    redirect_to transaction_path(@ransaction)
+  end
+
   private
 
   def transaction_param
