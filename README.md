@@ -1,6 +1,10 @@
 # Group Our Transaction
 
-This project is an application ...
+This project is an application for calculating expenses. Users can create, edit and delete transactions and group them. 
+
+## Live Demo
+
+## Screen-shots:
 
 ## Build-With
 

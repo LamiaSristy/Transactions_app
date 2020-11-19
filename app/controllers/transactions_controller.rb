@@ -16,26 +16,26 @@ class TransactionsController < ApplicationController
   end
 
   def create
-    group = Group.where(name: params['group_id']).first
+    # group = Group.where(name: params['group_id']).first
     @transaction = Transaction.new(transaction_param)
     @transaction.author_id = current_user.id
     if @transaction.save
       redirect_to root_path, notice: 'New transaction was successfully created.'
     else
-     render :new
+      render :new
     end
   end
 
   def show
-    @transaction= Transaction.find(params[:id])
+    @transaction = Transaction.find(params[:id])
   end
 
   def edit
-    @transaction= Transaction.find(params[:id])
+    @transaction = Transaction.find(params[:id])
   end
 
   def update
-    @transaction= Transaction.find(params[:id])
+    @transaction = Transaction.find(params[:id])
     @transaction.update(transaction_param)
     redirect_to transaction_path(@ransaction)
   end
@@ -52,5 +52,4 @@ class TransactionsController < ApplicationController
   def transaction_param
     params.require(:transaction).permit(:name, :amount, :group_id)
   end
-  
 end

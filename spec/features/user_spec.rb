@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature 'User', :type => :feature do
+RSpec.feature 'User', type: :feature do
   # scenario 'User creates a new user' do
   # visit 'users/sign_up'
   # fill_in 'user_name', with: 'DemoUser'

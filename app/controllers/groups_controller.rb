@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
   before_action :authenticate_user!
 
-  def index 
+  def index
     @groups = Group.all.find_by_first_letter(params[:letter])
   end
 
@@ -9,7 +9,7 @@ class GroupsController < ApplicationController
     @group = Group.new
   end
 
-  def create 
+  def create
     @group = Group.new(group_param)
     @group.user = current_user
     if @group.save
@@ -20,7 +20,7 @@ class GroupsController < ApplicationController
   end
 
   def show
-    @group = Group.find(params[:id])  
+    @group = Group.find(params[:id])
   end
 
   def edit
