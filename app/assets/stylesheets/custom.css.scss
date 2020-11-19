@@ -2,7 +2,7 @@ $primary-color-dark: #34501b;
 $primary-color: #5baa54;
 $primary-color-light: #d6e9c0;
 $primary-color-text: #031804;
-$divider-color: #bdbdbd;
+$divider-color: #9ba5af;
 $btn-color: #084d86;
 
 * {
@@ -68,6 +68,12 @@ $btn-color: #084d86;
   background-color: $primary-color !important;
 }
 
+
+.custom-bg3 {
+  background-color:$divider-color;  
+}
+
+
 .icon {
   height: 80px;
   width: 70px;
@@ -94,17 +100,22 @@ form {
       padding: 8px;
       background-color: $primary-color-light;
     }
+
+    select {
+      width: 100%;
+      padding : 5px 0;
+    }
   
     }
 }
 
 .jumbotron {
-    margin: 50px;
+  margin: 50px;    
 }
 
 .transition {
   &:hover {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
     box-shadow: 10px 10px 5px grey;
   }
 }

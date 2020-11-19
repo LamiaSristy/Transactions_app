@@ -1,18 +1,23 @@
 <div class='custom-bg2 text-light d-flex justify-content-between rounded col-12 col-md-6 center mb-5 shadow-sm bg-white'>
   <h1 class="center my-3">Welcome</h1>
-</div>  
+</div>
 
 <div class=" center py-5 shadow-lg bg-white rounded col-12 col-md-6  custom-bg">
-    <article class='center p-2 mb-3 mx-2 transition shadow rounded custom-bg2'>
-      <%= link_to 'All  my transactions', transactions_path(view: true), :class => 'text-light'%>
-    </article>
-    <div class='center p-2 mb-3 mx-2 transition shadow rounded custom-bg2'>
-      <%= link_to 'All my external transactions', transactions_path, :class => 'text-light' %>
-    </div>
-    
-    <div class='center p-2 mb-3 mx-2 transition shadow rounded custom-bg2'> 
-      <%= link_to "All Groups", groups_path, :class => 'text-light' %>
-    </div>
+    <%= link_to transactions_path(view: true), :class => 'text-light' do %>
+      <div class='center py-2 mb-2 mx-2 transition shadow rounded custom-bg2'>
+        <p class = 'mt-2'>All  my transactions</p>
+      </div>
+    <%end%>
+    <%= link_to transactions_path, :class => 'text-light' do %>
+      <div class='center py-2 mb-2 mx-2 transition shadow rounded custom-bg2'>
+        <p class = 'mt-2'>All my external transactions</p>
+      </div>
+    <%end%>
+     <%= link_to groups_path, :class => 'text-light' do %>
+      <div class='center py-2 mb-2 mx-2 transition shadow rounded custom-bg2'> 
+        <p class = 'mt-2'>All Groups</p>
+      </div>
+    <%end%>
 </div>
 
 
