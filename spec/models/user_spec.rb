@@ -12,4 +12,8 @@ RSpec.describe User, type: :model do
       expect(user).to_not be_valid
     end
   end
+  context 'associations' do
+    it { should have_many(:groups) }
+    it { should have_many(:transactions) }
+  end
 end

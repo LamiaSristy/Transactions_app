@@ -2,9 +2,7 @@
     <div class='custom-bg2 d-flex justify-content-around rounded col-12 col-md-6 center mb-3 shadow-sm text-light'>
       <h4 class ="mt-4 text-light font-weight-bold"><%= "Group Name: #{@group.name}" %></h4>
       <img src="<%=@group.icon%>" class="icon mb-2" alt="">
-    </div>
-
-    <p class="center mt-1"><%= link_to "Edit group details", edit_group_path(@group), :class => 'col-12 col-md-6 actions btn btn-primary btn-lg' %></p>
+    </div>   
     
     <ul>
       <% @group.transactions.each do |t|%>
@@ -20,6 +18,7 @@
         </div>  
       <%end%> 
     </ul>
+    <p class="center mt-1"><%= link_to "Edit group details", edit_group_path(@group), :class => ' text-dark font-weight-bold'%></p>
  </div>
  <%= link_to "Back", :back, :class => 'text-dark' %>
  

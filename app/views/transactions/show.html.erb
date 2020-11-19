@@ -1,17 +1,19 @@
 <div class="center">
-  <div class='custom-bg2 d-flex justify-content-around rounded col-12 col-md-6 center mb-3 shadow-sm text-light'>
-    <h4 class ="mt-4 text-light font-weight-bold"><%= "Transaction Details" %></h4>      
-  </div>
 
-  <p class="center mt-1"><%= link_to "Edit Transaction details", edit_transaction_path(@transaction), :class => 'col-12 col-md-6 actions btn btn-primary btn-lg' %></p>
+      <div class='custom-bg2 d-flex justify-content-around rounded col-12 col-md-6 center mb-3 shadow-sm text-light'>  
+        <h4 class ="mt-4 text-light font-weight-bold"><%= "Transaction Details" %></h4>      
+      </div> 
 
   <div class ='jumbotron font_weight_bold'>
-    <div class="center">
-      <img src="<%=@transaction.group.icon%>" class="icon" alt="">
-    </div>  
     <p class='center'>Transaction Name: <%=@transaction.name%></p>
+    <p class='center'>Amount: <%=@transaction.amount%></p>
     <p class='center'>Creator :<%=@transaction.author.name%></p>
     <p class='center'>Date:<small><%=@transaction.created_at.strftime("%b %d, %Y")%></small></p>   
   </div>
 
+  <p class="center mt-1"><%= link_to "Edit", edit_transaction_path(@transaction), :class => 'text-dark font-weight-bold' %></p>
+  <p class="center mt-1"><%= link_to "Delete", transaction_path(@transaction), method: :delete, data: { confirm: 'Are you certain you want to delete this?'}, :class => 'text-dark font-weight-bold'%></p>
+
 </div>
+
+<%= link_to "Back", :back, :class => 'text-dark' %>
