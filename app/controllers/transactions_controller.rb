@@ -16,7 +16,6 @@ class TransactionsController < ApplicationController
   end
 
   def create
-    # group = Group.where(name: params['group_id']).first
     @transaction = Transaction.new(transaction_param)
     @transaction.author_id = current_user.id
     if @transaction.save
@@ -37,7 +36,7 @@ class TransactionsController < ApplicationController
   def update
     @transaction = Transaction.find(params[:id])
     @transaction.update(transaction_param)
-    redirect_to transaction_path(@ransaction)
+    redirect_to transaction_path(@transaction)
   end
 
   def destroy

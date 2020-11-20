@@ -20,9 +20,9 @@ There are 3 models in this project.
 
 ## Build-With
 
-- Ruby v- '2.7.1'
-- Rails v- '6.0.3.4'
-- SQLite3 v- '1.4'
+- Ruby -v 2.7.1
+- Rails -v 6.0.3.4
+- SQLite3 -v 1.4
 - VScode
 
 ## Getting Started
@@ -38,7 +38,9 @@ To get this project up and running locally, you must already have ruby and neces
 3. Copy and paste the following code into the Terminal: git clone https://github.com/LamiaSristy/transactions_app
 4. Run ```cd transactions_app```.
 5. Run ```bundle install``` to get the necesary gems.
-6. Run ```yarn``` .
+6. Run ```yarn install --check-files``` .
+7. Run `rails db:drop`.
+7. Run `rails db:create`.
 7. Run `rails db:migrate`.
 
 **To check the Rspec Testcases on your local machine, follow these simple steps:**

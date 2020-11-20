@@ -1,5 +1,4 @@
 #config/cloudinary.yml
-
 development:
   cloud_name: dly3pk5gs
   api_key: '783442395382641'
