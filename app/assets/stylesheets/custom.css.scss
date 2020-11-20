@@ -6,24 +6,21 @@ $divider-color: #9ba5af;
 $btn-color: #084d86;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    // box-sizing: content-box;
-    outline: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
   
-  body {
-    background: $primary-color-light;
-    position: relative;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;    
-  }
-
-
+body {
+  background: $primary-color-light;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;    
+}
 
 .navbar {
-    background-color: $primary-color-dark !important;
+  background-color: $primary-color-dark !important;
 }
   
 .nav-link {
@@ -68,11 +65,9 @@ $btn-color: #084d86;
   background-color: $primary-color !important;
 }
 
-
 .custom-bg3 {
   background-color:$divider-color;  
 }
-
 
 .icon {
   height: 80px;
@@ -108,13 +103,12 @@ form {
     select {
       width: 100%;
       padding : 5px 0;
-    }
-  
-    }
+    }  
+  }
 }
 
 .jumbotron {
-  margin: 50px;    
+  margin: 50px;
 }
 
 .transition {
