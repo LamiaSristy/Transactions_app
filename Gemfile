@@ -45,6 +45,12 @@ group :development do
   gem 'web-console', '>= 3.3.0'
 end
 
+group :production do    
+    # gem 'pg'
+  gem 'rails_12factor'
+  gem 'heroku-deflater'
+end
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'database_cleaner', '~> 1.7'
