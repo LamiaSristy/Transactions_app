@@ -22,6 +22,6 @@
 
 </div class ='col-12 col-md-6 center'>
   <p class = 'center text-dark font-weight-bold mt-3'>Group-wise Transaction</p>
-  <div id="piechart" data=<%=  @expense_per_group.to_json %>></div>
+  <div id="piechart" data = "<%= @expense_per_group.to_json %>"></div>
   <div><%= javascript_pack_tag 'piechart' %></div>
 </div>

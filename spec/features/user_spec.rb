@@ -1,14 +1,20 @@
 require 'rails_helper'
 
-RSpec.feature 'User', type: :feature do
-  # scenario 'User creates a new user' do
-  # visit 'users/sign_up'
-  # fill_in 'user_name', with: 'DemoUser'
-  # fill_in 'user_email', with: 'demoUser@yahoo.com'
-  # fill_in 'user_password', with: '123456'
-  # fill_in 'user_password_confirmation', with: '123456'
-  # click_button 'Sign up'
-  # visit 'users'
-  # expect(page).to have_content('Welcome')
-  # end
+RSpec.feature User, type: :feature do
+  scenario 'User Seen the button Log-in' do
+    visit 'users/sign_in'
+    expect(page).to have_content('Copyright')
+  end
+  scenario 'User Seen the button Sign-up' do
+    visit 'users/sign_up'
+    expect(page).to have_content('Copyright')
+  end
+  scenario 'User not Seen the button Save' do
+    visit 'users/sign_in'
+    expect(page).to have_no_button('Save')
+  end
+  scenario 'User not Seen the button Save' do
+    visit 'users/sign_up'
+    expect(page).to have_no_button('Save')
+  end
 end

@@ -37,7 +37,7 @@ When user opens "All groups" page:
 <img src="app/assets/images/Transaction_app.jpeg">
 
 ## Video explanation Link:
-[watch loom video](https://www.loom.com/share/00d38320df6a4add9596ee2e93b3ef74).
+[watch loom video](https://www.loom.com/share/2d26da7bcc25458eb7487063b222a374).
 
 ## Build-With
 
