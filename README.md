@@ -2,11 +2,18 @@
 
 This project is an application for calculating expenses. Users can create, edit and delete transactions and group them. 
 
-## Live Demo
+## Live Demo:
+[On Heroku](https://whispering-sea-85863.herokuapp.com/users/sign_in)
+
+## Video explanation Link:
+[watch loom video]().
 
 ## Screen-shots:
+<img src="app/assets/images/collage-3.jpg">
 
-## Video Links:
+## Screen-shots:
+<img src="app/assets/images/Transaction_app.jpeg">
+
 
 ## Build-With
 
