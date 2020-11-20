@@ -1,17 +1,21 @@
 # Group Our Transaction
 
 This project is an application for calculating expenses. Users can create, edit and delete transactions and group them. 
+There are 3 models in this project.
+1. User
+2. Group
+3. Transaction
 
 ## Live Demo:
 [On Heroku](https://whispering-sea-85863.herokuapp.com/users/sign_in)
 
 ## Video explanation Link:
-[watch loom video]().
+[watch loom video](https://www.loom.com/share/877983d98d624f4aa5c5ab4e5518f486).
 
 ## Screen-shots:
 <img src="app/assets/images/collage-3.jpg">
 
-## Screen-shots:
+## ERD:
 <img src="app/assets/images/Transaction_app.jpeg">
 
 
@@ -38,6 +42,8 @@ To get this project up and running locally, you must already have ruby and neces
 6. Run ```yarn``` .
 7. Run `rails db:migrate`.
 
+**To check the Rspec Testcases on your local machine, follow these simple steps:**
+1. Run ```bundle exec rspec ```
 
 ## Author Details::
 
