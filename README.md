@@ -1,16 +1,37 @@
 # Group Our Transaction
 
 This project is an application for calculating expenses. Users can create, edit and delete transactions and group them. 
-There are 3 models in this project.
-1. User
-2. Group
-3. Transaction
+
+## Application Description:
+
+After log in an user can see:
+
+1. "All my transactions".
+2. "All my external transactions".
+3. "All groups".
+4. A pie chart showing the group wise transactions.
+
+When user opens "All my transactions" and "All my external transactions" page:
+
+1. Total amount is displayed at the top.
+2. A list of all transactions created by logged-in user is displayed (sorted by most recent).
+3. Each transaction displays its name, amount and date, and an icon of the group; if it has been assigned to.
+4. An action button "Add new" is displayed.
+5. Each transaction is clickable and opens "Transactions Details" page, where user can edit or delete the transaction.
+
+When user opens "All groups" page:
+
+1. A list of all groups is displayed (example: "Clothing", "Food", "Music") in alphabetical order.
+2. Each group displays its icon and name.
+3. Each group is clickable and opens "Group transactions" page, where user can edit the group.
+4. An action button "Create new" is displayed.
+5. The design of the page is similar to the "User profile page"
 
 ## Live Demo:
 [On Heroku](https://whispering-sea-85863.herokuapp.com/users/sign_in)
 
 ## Screen-shots:
-<img src="app/assets/images/collage-3.jpg">
+<img src="app/assets/images/ss.png">
 
 ## ERD:
 <img src="app/assets/images/Transaction_app.jpeg">
@@ -54,6 +75,10 @@ To get this project up and running locally, you must already have ruby and neces
 - Linkedin: [@LamiaSristy](https://www.linkedin.com/in/lamia-hemayet-sristy/)
 - E-mail: <a href="mailto:lamiasristy@gmail.com?subject=Hello Lamia!">Email</a>  
 - Twitter: [@LamiaSristy](https://twitter.com/lsristy1)
+
+## Acknowledgment::
+
+Design idea by Gregoire Vella on Behance
 
 
 ## Show your support
