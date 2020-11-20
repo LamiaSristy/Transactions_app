@@ -9,15 +9,14 @@ There are 3 models in this project.
 ## Live Demo:
 [On Heroku](https://whispering-sea-85863.herokuapp.com/users/sign_in)
 
-## Video explanation Link:
-[watch loom video](https://www.loom.com/share/877983d98d624f4aa5c5ab4e5518f486).
-
 ## Screen-shots:
 <img src="app/assets/images/collage-3.jpg">
 
 ## ERD:
 <img src="app/assets/images/Transaction_app.jpeg">
 
+## Video explanation Link:
+[watch loom video](https://www.loom.com/share/00d38320df6a4add9596ee2e93b3ef74).
 
 ## Build-With
 
