@@ -11,7 +11,7 @@ $btn-color: #084d86;
   box-sizing: border-box;
   outline: none;
 }
- 
+
 body {
   background: $primary-color-light;
   position: relative;
@@ -66,7 +66,7 @@ body {
 }
 
 .custom-bg3 {
-  background-color:$divider-color;
+  background-color: $divider-color;
 }
 
 .icon {
@@ -81,7 +81,6 @@ link {
 }
 
 form {
-  
   width: 80%;
   margin: 8px auto;
 
@@ -104,7 +103,7 @@ form {
     select {
       width: 100%;
       padding: 5px 0;
-    }  
+    } 
   }
 }
 
