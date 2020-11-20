@@ -110,8 +110,6 @@ GEM
     ffi (1.13.1-x86-mingw32)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    heroku-deflater (0.6.3)
-      rack (>= 1.4.5)
     http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
@@ -191,11 +189,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.3.0)
       loofah (~> 2.3)
-    rails_12factor (0.0.3)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.5)
-    rails_stdout_logging (0.0.5)
     railties (6.0.3.4)
       actionpack (= 6.0.3.4)
       activesupport (= 6.0.3.4)
@@ -343,12 +336,10 @@ DEPENDENCIES
   database_cleaner (~> 1.7)
   devise
   factory_bot_rails (~> 5.1)
-  heroku-deflater
   jbuilder (~> 2.7)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
-  rails_12factor
   rspec-rails (~> 3.8, >= 3.8.2)
   rubocop (~> 0.81.0)
   sass-rails (>= 6)
