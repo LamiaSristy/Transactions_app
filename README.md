@@ -44,7 +44,7 @@ To get this project up and running locally, you must already have ruby and neces
 
 ## Show your support
 
-Give ⭐ Star me on GitHub — it helps!
+Give a ⭐ Star in this repo on GitHub — it helps!
 
 ## 📝 License
 
