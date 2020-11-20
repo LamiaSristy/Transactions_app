@@ -11,22 +11,22 @@ $btn-color: #084d86;
   box-sizing: border-box;
   outline: none;
 }
-  
+ 
 body {
   background: $primary-color-light;
   position: relative;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;    
+  font-weight: 400;
 }
 
 .navbar {
   background-color: $primary-color-dark !important;
 }
-  
+
 .nav-link {
   color: white !important;
 }
-  
+
 #logo {
   float: left;
   font-size: 1.7em;
@@ -66,7 +66,7 @@ body {
 }
 
 .custom-bg3 {
-  background-color:$divider-color;  
+  background-color:$divider-color;
 }
 
 .icon {
@@ -81,17 +81,18 @@ link {
 }
 
 form {
+  
   width: 80%;
   margin: 8px auto;
-    
+
   .field {
     width: 100%;
     padding: 8px 0;
-  
+
     label {
       margin-bottom: 8px;
     }
-  
+
     input {
       width: 100%;
       border: 1px solid $divider-color;
@@ -102,7 +103,7 @@ form {
 
     select {
       width: 100%;
-      padding : 5px 0;
+      padding: 5px 0;
     }  
   }
 }
@@ -116,8 +117,4 @@ form {
     transform: scale(1.1, 1.1);
     box-shadow: 10px 10px 5px grey;
   }
-}
-
-#sticky-footer {
-  flex-shrink: none;
 }
