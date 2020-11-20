@@ -22,52 +22,6 @@
 
 </div class ='col-12 col-md-6 center'>
   <p class = 'center text-dark font-weight-bold mt-3'>Group-wise Transaction</p>
-  <div id="piechart">
+  <div id="piechart" data=<%=  @expense_per_group.to_json %>></div>
+  <div><%= javascript_pack_tag 'piechart' %></div>
 </div>
-
-
-<script type="text/javascript">
-  // Load google charts
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
-
-  function resize () {
-    //chart.draw(data, options);
-    drawChart();
-    }
-    if (window.addEventListener) {
-        window.addEventListener('resize', resize);
-    }
-    else {
-        window.attachEvent('onresize', resize);
-    }
-
-  // Draw the chart and set the chart values
-  function drawChart(js_array) {
-    var arr = [
-        ['group_name', 'sum'],
-      ];
-
-    var js_array = <%= raw @expense_per_group.to_json %>;
-
-    js_array.forEach((element, index, array) => {
-        if (!element["group_name"] ) {
-          element["group_name"] = "Uncategory";
-        }
-        arr.push([element["group_name"], element["sum"]]);
-
-    });
-
-    var data = google.visualization.arrayToDataTable(arr);
-
-    // Optional; add a title and set the width and height of the chart
-    var options = {
-      'backgroundColor': 'transparent',
-      'is3D':true
-      };
-
-    // Display the chart inside the <div> element with id="piechart"
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-    chart.draw(data, options);
-  }
-</script>
