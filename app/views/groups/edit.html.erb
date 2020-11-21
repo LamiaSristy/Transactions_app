@@ -1,0 +1,37 @@
+<div class='custom-bg2 text-light d-flex justify-content-between rounded col-12 col-md-6 center mb-5 shadow-sm bg-white'>
+  <h1 class="center my-3">Edit group</h1>
+</div>
+
+ <div class="bg-danger text-light mt-1 center rounded"> 
+        <% if @group.errors.any? %>
+          <% @group.errors.full_messages.each do |error| %>
+            <%= error %>
+          <% end %>
+        <% end %>  
+     </div>
+
+<div class='custom-bg3 rounded text-light font-weight-bold'>  
+  <div class="pb-4">
+    <%=form_for @group do |f|%>        
+
+      <div class="field">
+        <%=f.label :name%>
+        <%=f.text_field :name%>
+      </div>
+      
+      <div class="field">
+        <fieldset>
+          <%= f.label :icon, 'icon' %>
+          <%= f.hidden_field :icon_cache %>
+          <%= f.file_field :icon%>
+        </fieldset>
+      </div>
+      
+      <div class="actions">
+        <%=f.submit "Update", :class => 'btn btn-primary btn-lg mt-2'%>
+      </div>  
+    <%end%> 
+  </div>  
+</div>
+
+<%= link_to "Back", :back, :class => 'text-dark' %>

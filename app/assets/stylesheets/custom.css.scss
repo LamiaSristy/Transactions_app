@@ -1,0 +1,119 @@
+$primary-color-dark: #34501b;
+$primary-color: #5baa54;
+$primary-color-light: #d6e9c0;
+$primary-color-text: #031804;
+$divider-color: #9ba5af;
+$btn-color: #084d86;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: $primary-color-light;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.navbar {
+  background-color: $primary-color-dark !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  text-decoration: none;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: $primary-color-light;
+  padding: 20px 10px 120px 10px;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: $btn-color !important;
+}
+
+.custom-bg {
+  background-color: $primary-color-dark !important;
+  color: white;
+}
+
+.custom-bg2 {
+  background-color: $primary-color !important;
+}
+
+.custom-bg3 {
+  background-color: $divider-color;
+}
+
+.icon {
+  height: 80px;
+  width: 70px;
+  border-radius: 50%;
+  margin: 10px 0 0 10px;
+}
+
+link {
+  text-decoration: none !important;
+}
+
+form {
+  width: 80%;
+  margin: 8px auto;
+
+  .field {
+    width: 100%;
+    padding: 8px 0;
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid $divider-color;
+      border-radius: 4px;
+      padding: 8px;
+      background-color: $primary-color-light;
+    }
+
+    select {
+      width: 100%;
+      padding: 5px 0;
+    }
+  }
+}
+
+.jumbotron {
+  margin: 50px;
+}
+
+.transition {
+  &:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 10px 10px 5px grey;
+  }
+}

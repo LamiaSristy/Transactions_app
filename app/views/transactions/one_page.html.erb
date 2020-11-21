@@ -1,0 +1,32 @@
+<div class='action d-flex mb-3'>
+  <%= link_to 'Add new transaction', new_transaction_path, :class => 'center btn btn-primary btn-lg col-12 col-md-5 font-weight-bold' %> 
+</div>
+
+<div class='center'>
+  <div class='custom-bg2 text-light d-flex justify-content-between rounded col-12 col-md-5 center mb-5 shadow-sm bg-white'>
+    <p class ="mt-3"><small>All Transactions With Group.</small><p>
+    <p class ="mt-3"><small>Total Expence:</small> $<%= @t1.sum(:amount) %></p>   
+  </div>
+
+  <% @t1.each do |t| %>
+     <%= link_to transaction_path(t.id) do %> 
+       <div class="card mb-3 center custom-bg " style="max-width: 540px;">
+        <div class="row">
+          <div class="col-3">
+            <img src="<%=t.group.icon%>" class="icon" alt="">
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <div class = "d-flex justify-content-between">
+                <h5 class="card-title"><%= t.name %></h5>  
+                <p class="card-text">$<%= t.amount %></p>
+              </div>          
+              <p class="card-text d-flex justify-content-start"><small class="text-muted"><%=t.created_at.strftime("%b %d, %Y")%></small></p>      
+            </div>
+          </div>
+        </div>
+      </div> 
+     <%end%>   
+  <%end%>
+
+  <%= link_to "Back", :back, :class => 'text-dark' %>
