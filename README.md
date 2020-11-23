@@ -43,7 +43,7 @@ When user opens "All groups" page:
 
 - Ruby -v 2.7.1
 - Rails -v 6.0.3.4
-- SQLite3 -v 1.4
+- PostgreSQL
 - VScode
 
 ## Getting Started
