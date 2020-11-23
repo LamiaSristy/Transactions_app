@@ -28,7 +28,7 @@ When user opens "All groups" page:
 5. The design of the page is similar to the "User profile page"
 
 ## Live Demo:
-[On Heroku](https://whispering-sea-85863.herokuapp.com/users/sign_in)
+[On Heroku](https://expanzee.herokuapp.com/)
 
 ## Screen-shots:
 <img src="app/assets/images/ss.png">
